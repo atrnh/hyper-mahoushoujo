@@ -1,10 +1,10 @@
-![screenshot](screenshots/hyperterm.png)
+![colors](screenshots/themecolors.png)
 
 # hyper-mahoushoujo
 A bright, energetic, light theme for [Hyper.app](https://hyper.is), inspired
 by magical girls ✨
 
-![colors](screenshots/themecolors.png)
+![screenshot](screenshots/hyperterm.png)
 
 ![vim](screenshots/vim.png)
 
