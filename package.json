@@ -1,0 +1,24 @@
+{
+  "name": "hyper-majoushoujo",
+  "version": "1.0.0",
+  "description": "Light theme for Hyper inspired by magical girls.",
+  "main": "index.js",
+  "keywords": [
+    "hyper",
+    "hyper-theme",
+    "hyperterm",
+    "hyperterm-theme",
+    "hyperjs",
+    "theme",
+    "light",
+    "pink",
+    "magical girl",
+    "bright"
+  ],
+  "author": "Ashley Trinh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atrnh/hyper-mahoushoujo.git"
+  }
+}
