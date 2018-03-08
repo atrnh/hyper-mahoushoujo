@@ -13,6 +13,6 @@ In your `.hyper.js`, add the package name to your plugins array:
 
 ```js
 plugins: [
-  'hyper-teatime',
+  'hyper-mahoushoujo',
 ]
 ```
