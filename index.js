@@ -1,7 +1,7 @@
 const cursorColor = '#abc8ff';
 const foregroundColor = '#453d40';
 const backgroundColor = '#ffffff';
-const tabBorderColor = '#E2E4E7';
+const borderColor = '#E2E4E7';
 const colors = {
   black: '#abc8ff',
   lightBlack: '#a1a2fb',
@@ -25,6 +25,7 @@ exports.decorateConfig = config => {
   return Object.assign({}, config, {
     foregroundColor,
     backgroundColor,
+    borderColor,
     cursorColor,
     colors,
     css: `
@@ -41,7 +42,7 @@ exports.decorateConfig = config => {
         right: 0;
         color: ${foregroundColor} !important;
         background: ${backgroundColor} !important;
-        border-bottom: 1px solid ${tabBorderColor} !important;
+        border-bottom: 1px solid ${borderColor} !important;
       }
       .header_shape {
         color: ${foregroundColor} !important;
@@ -53,6 +54,25 @@ exports.decorateConfig = config => {
       .tab_tab {
         border: 0;
         background-color: ${backgroundColor};
+        border-left: 1px solid ${borderColor} !important;
+	border-bottom: 1px solid ${borderColor} !important;
+      }
+      .tab_text {
+        color: ${foregroundColor};
+        font-weight: normal;
+      }
+      .tab_textActive {
+        color: ${foregroundColor};
+        font-weight: 600;
+        background-color: ${backgroundColor};
+      }
+      .tab_icon {
+        color: ${foregroundColor};
+        font-weight: 600;
+      }
+      .tab_icon:hover {
+        color: ${foregroundColor};
+        font-weight: 600;
       }
     `
  })
