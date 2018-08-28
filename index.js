@@ -1,6 +1,7 @@
 const cursorColor = '#abc8ff';
 const foregroundColor = '#453d40';
 const backgroundColor = '#ffffff';
+const tabBorderColor = '#E2E4E7';
 const colors = {
   black: '#abc8ff',
   lightBlack: '#a1a2fb',
@@ -25,7 +26,35 @@ exports.decorateConfig = config => {
     foregroundColor,
     backgroundColor,
     cursorColor,
-    colors
+    colors,
+    css: `
+      ${config.css || ''}
+      .hyper_main {
+        border: none !important;
+      }
+      .splitpane_divider {
+        background-color: ${foregroundColor} !important;
+      }
+      .header_header, .header_windowHeader {
+        top: 0;
+        left: 0;
+        right: 0;
+        color: ${foregroundColor} !important;
+        background: ${backgroundColor} !important;
+        border-bottom: 1px solid ${tabBorderColor} !important;
+      }
+      .header_shape {
+        color: ${foregroundColor} !important;
+      }
+      .tabs_title {
+        color: ${foregroundColor};
+        font-weight: 600;
+      }
+      .tab_tab {
+        border: 0;
+        background-color: ${backgroundColor};
+      }
+    `
  })
 };
 
