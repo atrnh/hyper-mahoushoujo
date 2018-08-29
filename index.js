@@ -54,8 +54,10 @@ exports.decorateConfig = config => {
       .tab_tab {
         border: 0;
         background-color: ${backgroundColor};
-        border-left: 1px solid ${borderColor} !important;
 	border-bottom: 1px solid ${borderColor} !important;
+      }
+      .tab_tab:not(:first-child) {
+        border-left: 1px solid ${borderColor} !important;
       }
       .tab_text {
         color: ${foregroundColor};
